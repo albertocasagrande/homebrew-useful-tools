@@ -7,6 +7,11 @@ class ManimSlides < Formula
   sha256 "4c8d39b5387c2a77a34ceae5d740194ee53d2c9c0251ed30e0c55a3ac91f542c"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/albertocasagrande/homebrew-useful-tools/releases/download/manim-slides-5.5.2"
+    sha256 cellar: :any, arm64_tahoe: "01a50e9f7bdf1a15f8667915cefafec67792b48620505eb25c29b86fa1e006d5"
+  end
+
   depends_on "cmake" => :build # for mapbox_earcut
   depends_on "ninja" => :build
   depends_on "pkgconf" => :build
